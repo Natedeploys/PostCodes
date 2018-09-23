@@ -1,0 +1,20 @@
+.locationFieldArea {
+  width: 100%;
+}
+
+.locationFieldTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 5px 5px 5px;
+  font-size: 18px;
+}
+
+.locationFieldInput {
+  width: 95%;
+  margin: 5px 5px 5px 5px;
+  height: 30px;
+  font-size: 16px;
+  color: #444;
+  background-color: #f2f9fa;
+  border-style: none;
+  border-bottom: solid #cbe6eb 1px;
+}

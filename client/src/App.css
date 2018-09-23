@@ -1,0 +1,25 @@
+body {
+  background-color: rgba(4,66,77,.95);
+  overflow: hidden;
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 100%;
+  background-color:white;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 15px 15px 5px rgba(4,66,77,.85); 
+}
+
+.formFields {
+  float: left;
+  width: 50%;
+}
+
+.formMap {
+  width: 50%;
+  margin-left: 50%;
+}

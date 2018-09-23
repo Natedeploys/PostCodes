@@ -1,0 +1,21 @@
+.overlay {
+  width  : 30px;
+  height : 30px;
+  background:rgba(4,66,77,.95);
+  position: absolute;
+  opacity: 0.5;/*add this*/
+  top: 0px; 
+  left: 0px; 
+  z-index: 99;
+
+}
+
+.overlayText {
+  position: relative;
+  top: 50px;
+  left: -20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+}

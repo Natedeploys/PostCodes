@@ -1,0 +1,19 @@
+.submitButtonWrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.submitButtonWrapper button {
+  background-color: rgba(4,66,77,.95); 
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+}

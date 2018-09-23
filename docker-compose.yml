@@ -1,0 +1,46 @@
+version: '3.5'
+services: 
+  mysql:
+    env_file: env
+    image: 'mysql:latest'
+    ports:
+      - "127.0.0.1:1234:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - app
+  nginx:
+    restart: always
+    build: 
+      dockerfile: Dockerfile.dev
+      context: ./nginx
+    ports:
+      - '3050:80'  
+    networks:
+      - app    
+  api:
+    env_file: env
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./server
+    volumes: 
+      - /app/node_modules
+      - ./server:/app
+    networks:
+      - app
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
+    volumes:
+      - /app/node_modules
+      - ./client:/app
+    networks:
+      - app
+networks:
+  app:
+    name: app
+  default:
+    name: app
