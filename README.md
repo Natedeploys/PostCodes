@@ -17,7 +17,7 @@ A full stack web single page application, using MERN stack but with MySQL.
 1. You will need Docker to run this application
 2. You will need a Google Developer API key with Javascripts Map API and Geocoding API enabled
 3. Build with schema that matches dataset
-4. Upon initial build of application (Next section, step 3) connect to the SQL database and populate with csv data found in the csv folder using your preferred SQL Client or method
+4. Upon initial build of application (Next section, step 3) connect to the SQL database and populate with csv data found in the data folder using your preferred SQL Client or method
 ```
 
 ## Run
